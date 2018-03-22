@@ -25,9 +25,9 @@ section {
     height: 0.5em;
     vertical-align: bottom;
     margin-right: -50%;
-    margin-left: 10px;
+    margin-left: 30px;
     border-top: 1px solid #D1D2D3;
-    width: 100vw; }
+    width: 75%; }
   section button {
     display: block;
     margin: 0 auto;
