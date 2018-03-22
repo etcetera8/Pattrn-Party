@@ -27,6 +27,37 @@ body, html {
   #highlight {
     color: $teal;
   }
+}
+
+section {
+  margin: 20px;
+  height: 500px;
 
 
+  h2 {
+    font-weight: 300;
+    color: $darkGray;
+  }
+
+  h2:after {
+    content:"";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    margin-right: -50%;
+    margin-left: 10px;
+    border-top: 1px solid $midGray;
+    width: 100vw;
+}
+
+  button {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    font-weight: 300;
+    color: #fff;
+    border: none;
+    background: $olivePurple;
+  }
 }

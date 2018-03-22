@@ -13,4 +13,29 @@ body, html {
   #main-header #highlight {
     color: #34D1D1; }
 
+section {
+  margin: 20px;
+  height: 500px; }
+  section h2 {
+    font-weight: 300;
+    color: #666666; }
+  section h2:after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    margin-right: -50%;
+    margin-left: 10px;
+    border-top: 1px solid #D1D2D3;
+    width: 100vw; }
+  section button {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    font-weight: 300;
+    color: #fff;
+    border: none;
+    background: #3f3244; }
+
 /*# sourceMappingURL=styles.css.map */
