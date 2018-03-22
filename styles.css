@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+body, html {
+  font-family: 'Open Sans', sans-serif; }
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  background: #2F2235;
+  color: #fff; }
+  #main-header .header-filling {
+    margin: 20px 50px;
+    font-weight: 300; }
+  #main-header #highlight {
+    color: #34D1D1; }
+
+/*# sourceMappingURL=styles.css.map */
