@@ -28,10 +28,17 @@ body, html {
   }
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 section {
   margin: 20px;
   height: 500px;
-
 
   h2 {
     font-weight: 300;
@@ -51,7 +58,7 @@ section {
 
   button {
     display: block;
-    margin: 0 auto;
+    margin: 25px auto;
     width: 300px;
     height: 40px;
     font-weight: 300;
@@ -63,7 +70,6 @@ section {
 
 nav {
   display: flex;
-  width: 50%;
   margin: 0;
   
   .tab {
