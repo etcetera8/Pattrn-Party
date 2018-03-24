@@ -94,8 +94,12 @@ nav {
   }
 }
 
-article {
+.displayed {
   display: flex;
+}
+
+article {
+  display: none;
   width: 50%;
   min-width: 718px;
   border: 1px solid $midGray;
