@@ -13,7 +13,7 @@ body, html {
   line-height: 150%;
 }
 
-div.mobile {
+div.wrapper.mobile {
   display: none;
 }
 
@@ -151,7 +151,7 @@ article {
     display: none;
   }
 
-  div.mobile {
+  div.wrapper.mobile {
     display: block;
   }
 
