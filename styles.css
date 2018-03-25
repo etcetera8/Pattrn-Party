@@ -105,7 +105,7 @@ article {
     display: none; }
 
   div.wrapper.mobile {
-    display: block; }
+    display: flex; }
 
   nav {
     flex-direction: column; }
