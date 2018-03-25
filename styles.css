@@ -3,6 +3,9 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   line-height: 150%; }
 
+div.mobile {
+  display: none; }
+
 #main-header {
   display: flex;
   justify-content: space-between;
@@ -14,7 +17,8 @@ body, html {
   #main-header #highlight {
     color: #34D1D1; }
 
-.wrapper {
+.wrapper.web,
+.wrapper.mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,6 +101,12 @@ article {
       border-bottom: 1px solid #D1D2D3; }
 
 @media screen and (max-width: 725px) {
+  .wrapper.web {
+    display: none; }
+
+  div.mobile {
+    display: block; }
+
   nav {
     flex-direction: column; }
     nav .tab {

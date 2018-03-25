@@ -13,6 +13,10 @@ body, html {
   line-height: 150%;
 }
 
+div.mobile {
+  display: none;
+}
+
 #main-header {
   display: flex;
   justify-content: space-between;
@@ -29,7 +33,8 @@ body, html {
   }
 }
 
-.wrapper {
+.wrapper.web,
+.wrapper.mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,6 +147,14 @@ article {
 }
 
 @media screen and (max-width: 725px) {
+  .wrapper.web {
+    display: none;
+  }
+
+  div.mobile {
+    display: block;
+  }
+
   nav {
     flex-direction: column;
     
