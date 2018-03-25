@@ -59,6 +59,8 @@ nav {
     height: 40px;
     background: #F2F2F2;
     border-bottom: 1px solid #D1D2D3; }
+    nav .tab .expand {
+      display: none; }
   nav .two {
     border-left: 1px solid #fff;
     border-right: 1px solid #fff; }
@@ -98,7 +100,11 @@ article {
   nav {
     flex-direction: column; }
     nav .tab {
+      padding: 0 10px;
+      justify-content: space-between;
       width: 325px; }
+      nav .tab .expand {
+        display: inline; }
 
   article {
     height: auto; }

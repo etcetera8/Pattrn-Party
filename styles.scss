@@ -83,6 +83,10 @@ nav {
     height: 40px;
     background: $lightGray;
     border-bottom: 1px solid $midGray;
+
+    .expand {
+      display: none;
+    }
   }
 
   .two {
@@ -142,8 +146,15 @@ article {
     flex-direction: column;
     
     .tab {
+      padding: 0 10px;
+      justify-content: space-between;
       width: 325px;
+      
+      .expand {
+        display: inline;
+      }
     }
+
   }
 
   article {
