@@ -1,0 +1,21 @@
+{
+  "name": "pattrn-party",
+  "version": "1.0.0",
+  "description": "[Live Site]()",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-compile": "node-sass -rw styles.scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etcetera8/Pattrn-Party.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etcetera8/Pattrn-Party/issues"
+  },
+  "homepage": "https://github.com/etcetera8/Pattrn-Party#readme"
+}

@@ -83,6 +83,7 @@ article {
   display: none;
   width: 50%;
   min-width: 718px;
+  max-width: 719px;
   border: 1px solid #D1D2D3;
   border-top: none;
   background: #fff;
