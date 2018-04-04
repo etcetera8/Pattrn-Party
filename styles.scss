@@ -208,3 +208,59 @@ article {
     }
   }
 }
+
+#part-two {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  
+  .row {
+    display: flex;
+          justify-content: center;
+
+  }
+
+  .a1, .c2 {
+    width: 66.6%;
+  }
+
+  .a2,
+  .c1,
+  .b1,
+  .b2,
+  .b3 {
+    width: 33.3%;
+  }
+
+  .row-card {
+    height: 300px;
+    min-width: 200px;
+    border: 1px solid red;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #part-two {
+    align-items: center;
+    
+    .row {
+      flex-direction: column;
+    }
+    
+    .row-card {
+      width: 90%;
+      min-width: 350px;
+    }
+
+    .a1,
+    .c2,   
+    .a2,
+    .c1,
+    .b1,
+    .b2,
+    .b3 {
+      width: 90%;
+    }
+  }
+}

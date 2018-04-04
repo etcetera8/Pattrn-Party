@@ -141,5 +141,42 @@ article {
       margin: 15px; }
     article #content p {
       margin: 15px; } }
+#part-two {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column; }
+  #part-two .row {
+    display: flex;
+    justify-content: center; }
+  #part-two .a1, #part-two .c2 {
+    width: 66.6%; }
+  #part-two .a2,
+  #part-two .c1,
+  #part-two .b1,
+  #part-two .b2,
+  #part-two .b3 {
+    width: 33.3%; }
+  #part-two .row-card {
+    height: 300px;
+    min-width: 200px;
+    border: 1px solid red; }
+
+@media screen and (max-width: 510px) {
+  #part-two {
+    align-items: center; }
+    #part-two .row {
+      flex-direction: column; }
+    #part-two .row-card {
+      width: 90%;
+      min-width: 350px; }
+    #part-two .a1,
+    #part-two .c2,
+    #part-two .a2,
+    #part-two .c1,
+    #part-two .b1,
+    #part-two .b2,
+    #part-two .b3 {
+      width: 90%; } }
 
 /*# sourceMappingURL=styles.css.map */
