@@ -6,6 +6,13 @@ document.querySelector('.mobile').onclick = (e) => {
   selectTabs(e);
 }
 
+document.querySelector('.menu-btn').onclick = (e) => {
+  console.log(e)
+  if (!document.querySelector('.navigation').style.display) {
+    document.querySelector('.navigation').style.display = true;
+  }
+}
+
 const selectTabs = (e) => {
   if (!e.target.className.includes('active')) {
     document.querySelectorAll('.active').forEach( tab => tab.classList.remove('active'));
