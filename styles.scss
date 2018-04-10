@@ -282,3 +282,94 @@ article {
     }
   }
 }
+      // <header class="part3-header">
+      //   <div class="profile-image">
+
+      //   </div>
+      //   <nav class="navigation">
+      //     <ul class="link-uls">
+      //       <li class="navlink">navlink 1</li>
+      //       <li class="navlink">navlink 2</li>
+      //       <li class="navlink">navlink 3</li>
+      //     </ul>
+      //     <input placeholder="Search"/> 
+      //   </nav>
+
+      // </header>
+
+.part3-header {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid $midGray;
+  display: flex;
+  justify-content: space-around;
+  background: $midGray;
+  align-items: center;
+  height: 90px;
+
+  .menu-btn {
+    display: none;
+  }
+
+  .profile-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: $lightGray;
+    margin-right: 50px;
+  }
+
+  .link-uls {
+    text-decoration: none;
+    display: flex;
+  }
+
+  .navlink {
+    list-style: none;
+    margin-left: 55px;
+  }
+
+  input {
+    height: 30px;
+    padding-left: 40px;
+    background-color: $lightGray;
+    border: 1px solid $darkGray;
+    background: url('glass.png');
+    background-size: 10%;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 850px) {
+    .part3-header .profile-image {
+      margin-right: 0;
+    }
+
+    .link-uls {
+      padding: 0;
+    }
+
+    .navlink {
+    list-style: none;
+    margin-left: 10px;
+    }
+
+    input {
+      min-width: 50px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+  input {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block !important;
+  }
+}

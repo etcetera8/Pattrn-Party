@@ -191,5 +191,60 @@ article {
     #part-two .b2,
     #part-two .b3 {
       width: 90%; } }
+.part3-header {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid #D1D2D3;
+  display: flex;
+  justify-content: space-around;
+  background: #D1D2D3;
+  align-items: center;
+  height: 90px; }
+  .part3-header .menu-btn {
+    display: none; }
+  .part3-header .profile-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    margin-right: 50px; }
+  .part3-header .link-uls {
+    text-decoration: none;
+    display: flex; }
+  .part3-header .navlink {
+    list-style: none;
+    margin-left: 55px; }
+  .part3-header input {
+    height: 30px;
+    padding-left: 40px;
+    background-color: #F2F2F2;
+    border: 1px solid #666666;
+    background: url("glass.png");
+    background-size: 10%;
+    background-position: left;
+    background-repeat: no-repeat; }
+
+@media screen and (max-width: 850px) {
+  .part3-header .profile-image {
+    margin-right: 0; }
+
+  .link-uls {
+    padding: 0; }
+
+  .navlink {
+    list-style: none;
+    margin-left: 10px; }
+
+  input {
+    min-width: 50px; } }
+@media screen and (max-width: 1150px) {
+  input {
+    display: none; }
+
+  .navigation {
+    display: none; }
+
+  .menu-btn {
+    display: block !important; } }
 
 /*# sourceMappingURL=styles.css.map */
