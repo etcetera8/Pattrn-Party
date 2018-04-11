@@ -7,9 +7,12 @@ document.querySelector('.mobile').onclick = (e) => {
 }
 
 document.querySelector('.menu-btn').onclick = (e) => {
-  console.log(e)
-  if (!document.querySelector('.navigation').style.display) {
-    document.querySelector('.navigation').style.display = true;
+  if (document.querySelector('.navigation-mobile').style.display === "none") {
+    document.querySelector('.navigation-mobile').style.display = "block"
+    document.querySelector('.search-mobile').style.display = "block"
+  } else {
+    document.querySelector('.navigation-mobile').style.display = "none"
+    document.querySelector('.search-mobile').style.display = "none"
   }
 }
 

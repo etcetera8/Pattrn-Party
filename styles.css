@@ -194,17 +194,17 @@ article {
 .part3-header {
   margin: 0 auto;
   width: 80%;
-  border: 1px solid #D1D2D3;
+  border: 1px solid #666666;
   display: flex;
   justify-content: space-around;
-  background: #D1D2D3;
+  background: #666666;
   align-items: center;
-  height: 90px; }
+  height: 70px; }
   .part3-header .menu-btn {
     display: none; }
   .part3-header .profile-image {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background: #F2F2F2;
     margin-right: 50px; }
@@ -224,8 +224,61 @@ article {
     background-position: left;
     background-repeat: no-repeat; }
 
+.navigation-mobile {
+  display: none; }
+
+@media screen and (max-width: 1150px) {
+  input {
+    display: none; }
+
+  .part3-header {
+    width: 750px; }
+
+  .navigation {
+    box-sizing: border-box;
+    width: 750px;
+    display: none;
+    margin-top: 100px;
+    background: lightgrey; }
+
+  .nav-link {
+    display: block; }
+
+  .menu-btn {
+    display: block !important; }
+
+  .navigation-mobile {
+    background: lightgray;
+    width: 90%;
+    min-width: 250px;
+    margin: 0 auto;
+    width: 750px;
+    padding-bottom: 10px; }
+
+  .link-uls-mobile {
+    margin: 0; }
+
+  .link-uls-mobile li {
+    list-style: none; }
+
+  .nav-link-mobile {
+    margin: 5px; }
+
+  .search-mobile {
+    margin-left: 40px;
+    margin-bottom: 15px; } }
 @media screen and (max-width: 850px) {
-  .part3-header .profile-image {
+  .part3-header {
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 500px;
+    padding: 0 25px; }
+
+  .navigation-mobile {
+    width: 500px; }
+
+  .part3-header
+  .profile-image {
     margin-right: 0; }
 
   .link-uls {
@@ -237,14 +290,17 @@ article {
 
   input {
     min-width: 50px; } }
-@media screen and (max-width: 1150px) {
-  input {
-    display: none; }
+@media screen and (max-width: 550px) {
+  .part3-header {
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 300px;
+    padding: 0 25px; }
 
-  .navigation {
-    display: none; }
+  .navigation-mobile {
+    width: 300px; }
 
-  .menu-btn {
-    display: block !important; } }
+  .navlink-mobile {
+    margin: 0 10px 10px 0; } }
 
 /*# sourceMappingURL=styles.css.map */
