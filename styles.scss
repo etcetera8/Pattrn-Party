@@ -279,15 +279,13 @@ article {
   }
 }
 
-//PART 3
-
+//PART 3 /////////////////////////////////////
 .part3-header {
   margin: 0 auto;
   width: 80%;
-  border: 1px solid $darkGray;
   display: flex;
   justify-content: space-around;
-  background: $darkGray;
+  background: $midGray;
   align-items: center;
   height: 70px;
 
@@ -316,7 +314,6 @@ article {
   input {
     height: 30px;
     padding-left: 40px;
-    background-color: $lightGray;
     border: 1px solid $darkGray;
     background: url('glass.png');
     background-size: 10%;
@@ -325,13 +322,20 @@ article {
   }
 }
 
-.navigation-mobile {
-  display: none;
-}
+  .navigation-mobile,
+  .navlink-mobile {
+    display: none;
+  }
+
 
 @media screen and (max-width: 1150px) {
   input {
     display: none;
+  }
+
+  .navlink-mobile {
+    display: block;
+    margin: 30px 0;
   }
 
   .part3-header {
@@ -342,7 +346,6 @@ article {
     box-sizing: border-box;
     width:750px;
     display: none;
-    margin-top:100px;
     background: lightgrey;
   }
 
@@ -355,12 +358,13 @@ article {
   }
 
   .navigation-mobile {
-    background: lightgray;
     width: 90%;
+    box-sizing: border-box;
     min-width: 250px;
     margin: 0 auto;
     width: 750px;
-    padding-bottom: 10px;
+    padding: 25px 0;
+    background: $lightGray;
   }
 
   .link-uls-mobile {
@@ -369,10 +373,6 @@ article {
 
   .link-uls-mobile li {
     list-style: none;
-  }
-
-  .nav-link-mobile {
-    margin: 5px;
   }
 
   .search-mobile {
@@ -403,11 +403,6 @@ article {
       padding: 0;
     }
 
-    .navlink {
-      list-style: none;
-      margin-left: 10px;
-    }
-
     input {
       min-width: 50px;
     }
@@ -424,9 +419,5 @@ article {
 
   .navigation-mobile {
     width: 300px;
-  }
-
-  .navlink-mobile {
-    margin: 0 10px 10px 0;
   }
 }

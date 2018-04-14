@@ -194,10 +194,9 @@ article {
 .part3-header {
   margin: 0 auto;
   width: 80%;
-  border: 1px solid #666666;
   display: flex;
   justify-content: space-around;
-  background: #666666;
+  background: #D1D2D3;
   align-items: center;
   height: 70px; }
   .part3-header .menu-btn {
@@ -217,19 +216,23 @@ article {
   .part3-header input {
     height: 30px;
     padding-left: 40px;
-    background-color: #F2F2F2;
     border: 1px solid #666666;
     background: url("glass.png");
     background-size: 10%;
     background-position: left;
     background-repeat: no-repeat; }
 
-.navigation-mobile {
+.navigation-mobile,
+.navlink-mobile {
   display: none; }
 
 @media screen and (max-width: 1150px) {
   input {
     display: none; }
+
+  .navlink-mobile {
+    display: block;
+    margin: 30px 0; }
 
   .part3-header {
     width: 750px; }
@@ -238,7 +241,6 @@ article {
     box-sizing: border-box;
     width: 750px;
     display: none;
-    margin-top: 100px;
     background: lightgrey; }
 
   .nav-link {
@@ -248,21 +250,19 @@ article {
     display: block !important; }
 
   .navigation-mobile {
-    background: lightgray;
     width: 90%;
+    box-sizing: border-box;
     min-width: 250px;
     margin: 0 auto;
     width: 750px;
-    padding-bottom: 10px; }
+    padding: 25px 0;
+    background: #F2F2F2; }
 
   .link-uls-mobile {
     margin: 0; }
 
   .link-uls-mobile li {
     list-style: none; }
-
-  .nav-link-mobile {
-    margin: 5px; }
 
   .search-mobile {
     margin-left: 40px;
@@ -284,10 +284,6 @@ article {
   .link-uls {
     padding: 0; }
 
-  .navlink {
-    list-style: none;
-    margin-left: 10px; }
-
   input {
     min-width: 50px; } }
 @media screen and (max-width: 550px) {
@@ -298,9 +294,6 @@ article {
     padding: 0 25px; }
 
   .navigation-mobile {
-    width: 300px; }
-
-  .navlink-mobile {
-    margin: 0 10px 10px 0; } }
+    width: 300px; } }
 
 /*# sourceMappingURL=styles.css.map */
